@@ -31,12 +31,12 @@ def getProjectType():
 
 if (getVerification()):
 
+    thisFile = sys.argv[0]
     projectType = getProjectType()
 
     if (projectType == 'c'):
-        os.system('cp -r ' + sys.argv[0] + '/c/* .')
-        pass
+        os.system('cp -r ' + thisFile[:thisFile.rfind('/')] + '/c/* .')
     elif (projectType == 'c++'):
-        os.system('cp -r ' + sys.argv[0] + '/c++/* .')
+        os.system('cp -r ' + thisFile[:thisFile.rfind('/')] + '/c++/* .')
     elif (projectType == 'java'):
-        os.system('cp -r ' + sys.argv[0] + '/java/* .')
+        os.system('cp -r ' + thisFile[:thisFile.rfind('/')] + '/java/* .')
