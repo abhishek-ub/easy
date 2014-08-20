@@ -7,9 +7,9 @@ This repo contains a few useful scripts for creating, navigating, building, and
 executing code projects. These scripts are most handy when they are executed
 using shell aliases. The aliases you'll need to include in your .bashrc (or
 other initialization file, depending on your shell) are included in the file
-"ADD_TO_RC.txt". Once you've added the aliases (and edited them so that they
-include paths to this directory and not "<path-to-this-directory>", the
-workflow is as follows:
+"ADD_TO_RC". Once you've added the aliases (and edited them so that they include
+paths to this directory and not "<path-to-this-directory>") the workflow is as
+follows:
 
 1) ip
 
