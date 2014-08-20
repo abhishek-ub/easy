@@ -1,0 +1,11 @@
+alias ip='python <path-to-this-directory>/initProj.py'
+
+alias  m='python <path-to-this-directory>/makeProj.py'
+alias mc='python <path-to-this-directory>/makeProj.py clean'
+alias  r='python <path-to-this-directory>/runProj.py'
+alias rv='python <path-to-this-directory>/runProj.py valgrind'
+
+alias bin='. <path-to-this-directory>/cd.sh bin'
+alias doc='. <path-to-this-directory>/cd.sh doc'
+alias obj='. <path-to-this-directory>/cd.sh obj'
+alias src='. <path-to-this-directory>/cd.sh src'

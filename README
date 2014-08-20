@@ -1,0 +1,35 @@
+easy
+====
+
+Easy code project initialization, navigation, and execution
+
+This repo contains a few useful scripts for creating, navigating, building, and
+executing code projects. These scripts are most handy when they are executed
+using shell aliases. The aliases you'll need to include in your .bashrc (or
+other initialization file, depending on your shell) are included in the file
+"ADD_TO_RC.txt". Once you've added the aliases (and edited them so that they
+include paths to this directory and not "<path-to-this-directory>", the
+workflow is as follows:
+
+1) ip
+
+The "ip" command allows a user to initialize the current working directory to
+a code project. The script currently only allows users to select from either a
+Java, C, or C++ project but can easily be extended to include other languages.
+The script copies over the contents of the java, c, or c++ directory (depending
+on language selection), including the necessary Makefile and project
+directories.
+
+2) src, doc, obj, bin
+
+The "src", "doc", "obj", and "bin" commands allow the user to instantly switch
+to any of those directories from anywhere within the code project. Again, this
+is easily extensible to include other directories as each user sees fit.
+
+3) m, mc, r (and rv)
+
+The "m" command allows a user to make the project from any subdirectory of the
+code project, including the root. The "mc" command performs the make clean
+operation. Once a project is compiled, the "r" command runs the executable
+binary file. The "rv" command (C only) allows a user to run an executable with
+Valgrind.
