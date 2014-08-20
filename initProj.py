@@ -1,4 +1,5 @@
 import os
+import sys
 
 def getVerification():
 
@@ -29,10 +30,13 @@ def getProjectType():
             return 'java'
 
 if (getVerification()):
+
     projectType = getProjectType()
+
     if (projectType == 'c'):
-        os.system('cp -r /home/mackward/Documents/Scripts/codeProjects/projectInit/c/* .')
+        os.system('cp -r ' + sys.argv[0] + '/c/* .')
+        pass
     elif (projectType == 'c++'):
-        os.system('cp -r /home/mackward/Documents/Scripts/codeProjects/projectInit/c++/* .')
+        os.system('cp -r ' + sys.argv[0] + '/c++/* .')
     elif (projectType == 'java'):
-        os.system('cp -r /home/mackward/Documents/Scripts/codeProjects/projectInit/java/* .')
+        os.system('cp -r ' + sys.argv[0] + '/java/* .')
