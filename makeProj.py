@@ -12,7 +12,8 @@ if makefilePath is None:
 
 # Now we really couldn't find the makefile
 if makefilePath is None:
-    print ('Could not find "' + makefile + '" anywhere in the path of ' + os.getcwd())
+    print ('Could not find "' + makefile + '" or "' + makefile.lower()
+           + '" anywhere in the path of ' + os.getcwd())
     sys.exit()
 
 # Extract just the root directory and then run make in that directory
